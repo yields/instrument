@@ -53,4 +53,14 @@ describe('instrument', function(){
     assert(0 == mod.uncovered['68:81']);
     assert('return a * b;' == mod.source.slice(68, 81));
   })
+
+  it('should push ranges', function(){
+    var mod = cov.modules['math/mul.js'];
+    assert(mod.ranges.length);
+    mod.ranges.map(function(range){
+      range = range.join(':');
+      var n = mod.covered[range] || mod.uncovered[range];
+      assert('number' == typeof n);
+    });
+  })
 })

@@ -82,6 +82,7 @@ Instrument.prototype.walk = function(ast, type){
       var global = this.global;
       var mod = this.mod;
       var expr = statement(range, mod, global);
+      mod.ranges.push(range);
       range = range.join(':');
       this.mod.uncovered[range] = 0;
       ast.splice(i * 2, 0, expr);
