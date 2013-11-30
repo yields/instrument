@@ -1,0 +1,21 @@
+{
+  "name": "instrument",
+  "repo": "yields/instrument",
+  "description": "code coverage instrumentation",
+  "keywords": ["coverage", "instrument"],
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": ["index.js"],
+  "dependencies": {
+    "yields/function-source": "*",
+    "yields/escodegen": "*",
+    "component/global": "*",
+    "ariya/esprima": "*"
+  },
+  "development": {
+    "visionmedia/mocha-matrix": "*",
+    "visionmedia/mocha": "*",
+    "component/assert": "*"
+  }
+}
