@@ -9,7 +9,7 @@
   "scripts": ["index.js"],
   "dependencies": {
     "yields/function-source": "*",
-    "yields/escodegen": "*",
+    "yields/escodegen": "master",
     "component/global": "*",
     "ariya/esprima": "*"
   },
