@@ -3,7 +3,7 @@
   "repo": "yields/instrument",
   "description": "code coverage instrumentation",
   "keywords": ["coverage", "instrument"],
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "MIT",
   "main": "index.js",
   "scripts": ["index.js"],
